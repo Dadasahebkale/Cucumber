@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = {"src\\test\\java\\appfeatures"},
+		features = {"src/test/resources/appfeatures"},
 		glue={"stepdefinitions"},
 		plugin= {"pretty"}
 		
