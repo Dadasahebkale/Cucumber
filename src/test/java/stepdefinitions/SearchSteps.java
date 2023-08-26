@@ -1,6 +1,6 @@
 package stepdefinitions;
 
-import com.sun.tools.javac.util.Assert;
+
 
 import amazonimplementation.Product;
 import amazonimplementation.Search;
@@ -30,8 +30,7 @@ public class SearchSteps {
 		search=new Search();
 	    String name= search.displayProduct(product);
 	    System.out.println("Search product is : "+name);
-	    //Assert.assertEquals(product.getProductName(), name);
-	    //Assert.assert.name;
+	 
 	}
 
 }
