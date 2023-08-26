@@ -5,16 +5,13 @@ import org.junit.runner.RunWith;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
-
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = {"src/test/resources/appfeatures/Search.feature"},
-		glue={"stepdefinitions","myhooks"},
-		tags="@Smoke",
-		plugin= {"pretty"}
-		
+		features= {"src/test/resources/appfeatures/Order.feature"},
+		glue= {"stepdefinitions"},
+		//tags="@All",
+		plugin={"pretty"}
 		)
-
-public class AmazoneTest {
+public class OrderTest {
 
 }
