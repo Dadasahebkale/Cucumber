@@ -7,12 +7,12 @@ import io.cucumber.java.BeforeStep;
 import io.cucumber.java.Scenario;
 import testbase.CucumberTestBase;
 
-public class AmazoneHooks{
+public class AmazoneHooks extends CucumberTestBase{
 
 	//public static WebDriver driver;
 	@Before("@Smoke")
 	public static void launchBrowser(Scenario sc) {
-		//setUp();
+		setUp();
 //		driver=new ChromeDriver();
 //		driver.manage().window().maximize();
 //		driver.get("https://www.amazon.in/");
@@ -28,7 +28,7 @@ public class AmazoneHooks{
 //	}
 	@After(order = 2)
 	public void closeBrowser() {
-		//tearDown();
+		tearDown();
 	}
 //	@After(order = 1)
 //	public void logOut(Scenario sc) {
@@ -36,11 +36,11 @@ public class AmazoneHooks{
 //	}
 	@BeforeStep
 	public void screenShot() {
-		//takesScreenshot();
+		takesScreenshot();
 	}
 	@AfterStep
 	public void refreshPage() {
 //		driver.navigate().refresh();
-	//	System.out.println("Page has been refreshed");
+	System.out.println("Page has been refreshed");
 	}
 }
